@@ -27,6 +27,8 @@ public class PourDetector : MonoBehaviour
     private void StartPour()
     {
         print("Start");
+        currentStream = CreateStream();
+        currentStream.Begin();
 
     }
     private void EndPour()
